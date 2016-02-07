@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 //app.use(app.router);
 app.get('/',function(req,res){		
-		res.render('kharcha',{'name':'Vamshi Kampalli'});
+		res.render('index',{'name':'Vamshi Kampalli'});
 });
 app.post('/movieList',function(req,res,next){
 	mongoClient.connect('mongodb://Sri:password@ds059284.mongolab.com:59284/srinivasdb',function(err,db){/*mongodb://localhost:27017/myFavorites*/
