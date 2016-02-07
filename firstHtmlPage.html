@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>helloWorld</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h4>Hello,{{name}}</h4>
+	<h3>Movies List</h3>
+		<ul>
+			{% for exp in listOfExp%}
+			<li>{{exp.name}}, {{exp.amount}},{{exp.comments}}</li>
+			{% endfor %}
+		</ul>
+</body>
+</html>
